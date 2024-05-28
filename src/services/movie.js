@@ -14,7 +14,6 @@ async function writeFile(data) {
 }
 
 function toMovieModel(data) {
-    console.log(data);
 
     const movie = new Movie();
 
@@ -65,11 +64,34 @@ async function createMovie(movieData) {
 }
 
 function uuid() {
-    return'xxxx-xxxx'.replace(/x/g, () => (Math.random() * 16 | 0).toString(16));
+    return 'xxxx-xxxx'.replace(/x/g, () => (Math.random() * 16 | 0).toString(16));
 }
+
+// async function searchMovie({ title, genre, year }) {
+//     const movies = await readFile();
+
+//     if (!title && !genre && !year) {
+//         return movies.map(movieModal);
+//     }
+
+//     const found = movies.filter((m) => {
+//         if (title && !m.title.toLowerCase().includes(title.toLowerCase())) {
+//             return false;
+//         }
+//         if (genre && !m.genre.toLowerCase() != (genre.toLowerCase())) {
+//             return false;
+//         }
+//         if (year && !m.year != year) {
+//             return false;
+//         }
+//         return true;
+//     });
+//     return found;
+// }
 
 module.exports = {
     getAllMovies,
     getMovieById,
-    createMovie
+    createMovie,
+    // searchMovie
 };
