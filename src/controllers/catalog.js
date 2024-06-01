@@ -43,4 +43,4 @@ module.exports = {
         console.log(movies);
         res.render('search', { movies });
     }
-};
+}; 
