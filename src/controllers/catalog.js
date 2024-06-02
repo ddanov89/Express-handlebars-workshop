@@ -1,10 +1,9 @@
-const { query } = require("express");
 const { getAllMovies, getMovieById } = require("../services/movie");
 
 module.exports = {
     home: async (req, res) => {
         const movies = await getAllMovies();
-        res.render('home', { movies });
+        res.render('home', { movies: movies });
     },
     details: async (req, res) => {
         const { id } = req.params;
@@ -14,7 +13,7 @@ module.exports = {
             return;
         }
         movie.startRating = "&#x2605;".repeat(movie.rating);
-        res.render('details', { movie });
+        res.render('details', { movie: movie });
     },
     // search: async (req, res) => {
     //     const movies = await searchMovie();
@@ -28,19 +27,21 @@ module.exports = {
         const year = urlParams.get('year');
 
         let movies = await getAllMovies();
+
         if (title) {
             movies = movies.filter(movie =>
                 movie.title.toLowerCase().includes(title.toLowerCase()));
         }
+
         if (genre) {
             movies = movies.filter(movie =>
                 movie.genre.toLowerCase().includes(genre.toLowerCase()));
         }
+
         if (year) {
             movies = movies.filter(movie =>
                 movie.year === parseInt(year));
         }
-        console.log(movies);
         res.render('search', { movies });
     }
 }; 

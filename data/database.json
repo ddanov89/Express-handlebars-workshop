@@ -16,7 +16,7 @@
     "director": "Rob Marshall",
     "year": 2023,
     "imageURL": "/static/img/the-little-mermaid.jpg",
-    "rating": 3,
+    "rating": 2,
     "description": "The youngest of King Triton's daughters, Ariel is a beautiful and spirited young mermaid with a thirst for adventure. Longing to find out more about the world beyond the sea, Ariel visits the surface and falls for the dashing Prince Eric. Following her heart, she makes a deal with the evil sea witch, Ursula, to experience life on land."
   },
   {
@@ -36,7 +36,7 @@
     "director": "Denis Villeneuve",
     "year": 2024,
     "imageURL": "/static/img/dune-part-2-poster.jpg",
-    "rating": 2,
+    "rating": 4,
     "description": "In the epic continuation of the DUNE saga, Paul Atreides faces new challenges as he navigates the treacherous politics of Arrakis and confronts ancient prophecies that could reshape the universe."
   },
   {
@@ -44,9 +44,9 @@
     "title": "Spider-man: No Way Home",
     "genre": "Action",
     "director": "Jon Watts",
-    "year": "2021",
+    "year": 2021,
     "imageURL": "/static/img/spider-man.jpg",
-    "rating": "5",
+    "rating": 5,
     "description": "For the first time in the cinematic history of Spider-Man, our friendly neighborhood hero's identity is revealed, bringing his Super Hero responsibilities into conflict with his normal life and putting those he cares about most at risk. When he enlists Doctor Strange’s help to restore his secret, the spell tears a hole in their world, releasing the most powerful villains who’ve ever fought a Spider-Man in any universe. Now, Peter will have to overcome his greatest challenge yet, which will not only forever alter his own future but the future of the Multiverse."
   }
 ]

@@ -33,7 +33,7 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: inherit;
-
+    
 }
 
 nav,
@@ -118,6 +118,13 @@ footer {
     font-weight: bold;
     padding: 0.7em 1em;
 }
+.error label {
+    color: red;
+}
+
+.error input.inputFields, .error textarea.inputFields {
+    border-color: red;
+}
 
 .error-container {
     position: fixed;
@@ -153,15 +160,6 @@ footer {
     animation: cssAnimation 0s ease-in 2s forwards;
     -webkit-animation-fill-mode: forwards;
     animation-fill-mode: forwards;
-}
-
-.error label {
-    color: red;
-}
-
-.error input.inputFields,
-.error textarea.inputFields {
-    border-color: red;
 }
 
 @keyframes cssAnimation {
