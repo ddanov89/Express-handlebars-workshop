@@ -5,6 +5,7 @@ To run the app, you will require/install the following packages as follows:
 ##### npm i express
 ##### npm i express-handlebars
 ##### npm i --save-dev nodemon
+##### npm i mongoose
 
 The following must also be ran in the terminal: 
 
