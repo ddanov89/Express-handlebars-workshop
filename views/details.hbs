@@ -19,11 +19,16 @@
 
                 </div>
 
-                <p class="disc">{{description}}</p>
+                <p class="disc">Description: {{description}}</p>
             </div>
         </div>
         <div class="card_right">
             <img src="{{imageURL}}" alt="image">
+        </div>
+        <div class="main-cast-card">
+            {{#each cast}}
+            {{> cast}}
+            {{/each}}
         </div>
     </div>
 

@@ -1,9 +1,11 @@
 const { createMovie } = require("../services/movie");
 
 module.exports = {
+
     createGet: (req, res) => {
         res.render('create');
     },
+    
     createPost: async (req, res) => {
 
         const errors = {

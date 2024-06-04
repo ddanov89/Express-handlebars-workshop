@@ -11,6 +11,10 @@ const castSchema = new Schema({
         min: 0,
         max: 255
     },
+    born: {
+        type: String,
+        required: true
+    },
     nameInMovie: {
         type: String,
         required: true
