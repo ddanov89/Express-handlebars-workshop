@@ -6,6 +6,10 @@ To run the app, you will require/install the following packages as follows:
 ##### npm i express-handlebars
 ##### npm i --save-dev nodemon
 ##### npm i mongoose
+##### npm i bcrypt
+##### npm i jsonwebtoken
+##### npm i cookie-parser
+
 
 The following must also be ran in the terminal: 
 
