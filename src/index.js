@@ -16,7 +16,7 @@ async function start() {
     app.use(router);
 
     app.listen(PORT, () => {
-        console.log(`Application running on port ${PORT}`);
+        console.log(`Application running on port ${PORT}!`);
     });
 }
 
