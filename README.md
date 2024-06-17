@@ -9,6 +9,8 @@ To run the app, you will require/install the following packages as follows:
 ##### npm i bcrypt
 ##### npm i jsonwebtoken
 ##### npm i cookie-parser
+##### npm i express-validator
+
 
 
 The following must also be ran in the terminal: 
